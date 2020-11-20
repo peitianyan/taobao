@@ -1,0 +1,287 @@
+*{
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    background-color: #f4f4f4;
+}
+html{
+    font-size: 27vw;
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+/* header */
+header{
+    height:37px;
+	display: flex;
+	justify-content: space-between;
+    background-color: rgb(255, 133, 42);
+}
+header> .iconfont{
+    width:0.54rem;
+	font-size:0.24rem;
+	color:#fcf3ff;
+    display: flex;
+    margin-left: 4px;
+	align-items: center;
+}
+header form{
+    display: block;
+    width: 438px;
+    height: 25px;
+    font-size: 0px;
+    margin: auto 13px;
+    background-color: rgb(255,78,34);
+    text-align: center;
+    border-radius: 4px;
+    align-items: center;
+}
+header form .text{
+    height: 25px;
+    line-height: 25px;
+    font-size: 13px;
+    display: inline-block;
+    color: rgb(240, 224, 220);
+}
+header form .iconfont{
+    color:#fcf3ff;
+}
+/* nav */
+nav{
+    height: 300px;
+    flex: 1;
+    background: #fff;
+    overflow: auto;
+}
+nav .banner{
+    height: 115px;
+}
+nav .banner img{
+    height:100%;
+	width:100%;
+}
+nav .nav{
+    display: flex;
+    flex-direction: row;
+    height: 156px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    overflow-x: auto;
+}
+nav .nav li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 67px;
+    margin-top: 3px;
+    margin-left: 20px;
+}
+nav .nav li .iconfont{
+    font-size: 40px;
+}
+nav .nav li a{
+    font-size: 11px;
+    line-height: 15px;
+    color: rgb(102, 102, 102);
+    margin-top: 4px;
+}
+nav .dots{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+nav .dots .dot{
+    width: 50px;
+    height: 3px;
+    background-color: rgb(212, 216, 222);
+    border-radius: 4px;
+}
+nav .dots .dot div{
+    width: 20px;
+    height: 3px;
+    background-color: rgb(255, 109, 42);
+    border-radius: 4px;
+}
+/* content */
+main{
+    flex: 1;
+	overflow:auto;
+}
+main .content{
+    margin: auto;
+    width: 340px;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+}
+main .content .jhs{
+    display: flex;
+    flex-flow: wrap;
+    height: 348px;
+    width: 180px;
+    
+}
+main .content .jhs h1{
+    display: flex;
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    top: -25px;
+}
+main .content .jhs span{
+    font-size: 10px;
+    font-weight: bold;
+}
+main .content .jhs dl{
+    width: 85px;
+    height: 70px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+main .content .jhs dl div{
+    width: 80px;
+    height: 70px;
+    
+}
+main .content .jhs dl dt img{
+    width: 50px;
+    height: 50px;
+}
+.line{
+    height: 323px;
+    width: 0.1px;
+    background-color: rgb(160, 156, 156);
+    position: absolute;
+    top: 10px;
+    left: 170px;
+}
+main .content .live{
+    display: flex;
+    flex-flow: wrap;
+    height: 348px;
+    width: 180px;
+    float: right;
+    position: absolute;
+    top: 0px;
+    right: -10px;
+    
+}
+main .content .live h1{
+    display: flex;
+    font-weight: 700;
+    font-size: 18px;
+    position: absolute;
+    top: -25px;
+}
+main .content .live span{
+    font-size: 10px;
+    font-weight: bold;
+}
+main .content .live dl{
+    width: 85px;
+    height: 70px;
+    position: relative;
+    top: 30px;
+    left: 10px;
+}
+main .content .live dl div{
+    width: 80px;
+    height: 70px;
+    
+}
+main .content .live dl dt img{
+    width: 50px;
+    height: 50px;
+}
+main .likeList{
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+	flex-flow:wrap;
+	justify-content: space-between;
+	padding:0 0.1rem;
+}
+main .likeList .like{
+    padding: 11.52px 0;
+    width: 100%;
+    text-align: center;
+}
+main .likeList .like img{
+    width: 154.56px;
+    height: 18px;
+}
+main .likeList dl{
+    width: 164.16px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: white;
+}
+main .likeList dl dt img{
+    width: 164.16px;
+    height: 164.16px;
+    border-radius: 8px 8px 0 0;
+}
+.recommend-info {
+    padding-left: 9px;
+    padding-right: 8px;
+    height: 90px;
+    text-decoration: none;
+}
+.recommend-title {
+    margin-top: 11px;
+    height: 35px;
+    position: relative;
+    overflow: hidden;
+    line-height: 17px;
+    text-overflow: ellipsis;
+    min-height: 0;
+}
+.recommend-title-p {
+    font-size: 12.48px;
+    color: #333333;
+}
+.recommend-price-box{
+    margin-top: 10px;
+}
+.recommend-price{
+    font-size: 15px;
+    line-height: 15px;
+    color: #ff5500;
+}
+.recommend-payed{
+    font-size: 10px;
+    color: #999999;
+}
+/* footer */
+footer{
+	height:0.48rem;
+	width:100%;
+	position:fixed;
+	bottom:0;
+	background: white;
+	display: flex;
+	justify-content: space-between;
+	padding:0 0.27rem;
+}
+footer aside{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+footer aside .iconfont{
+    color: #5D656B;
+	font-size:0.25rem;
+}
+footer aside span{
+    color: #5D656B;
+	font-size:0.1rem;
+}
+
